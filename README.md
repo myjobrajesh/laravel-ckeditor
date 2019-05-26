@@ -7,10 +7,11 @@ Steps
 - .env : add below lines
 
 FILESYSTEM=ftp
-#for ckeditor file storage
+
 CKEDITOR_S3_STORAGE=false
+
 AWS_CKEDITOR_BUCKET=aws-ckeditor (for aws we need to create s3 bucket named aws-ckeditor, or you can name whatever)
-#end ckeditor filestorage
+
 
 - Don't override any files. just get changes and add to original files
 

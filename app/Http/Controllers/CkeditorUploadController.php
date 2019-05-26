@@ -108,7 +108,6 @@ class CkEditorUploadController extends \UniSharp\LaravelFilemanager\Controllers\
             return false;
         }
 
-        // TODO should be "FileWasUploaded"
         event(new ImageWasUploaded(realpath($new_file_path)));
 
         return $new_filename;
@@ -330,7 +329,7 @@ class CkEditorUploadController extends \UniSharp\LaravelFilemanager\Controllers\
         }
 
         $disk->move($old_file, $new_file);
-        // TODO Should be "FileWasRenamed"
+
         event(new ImageWasRenamed($old_file, $new_file));
 
         return parent::$success_response;

@@ -4,14 +4,16 @@
 namespace App\Handlers;
 
 // we assume Customer Contorller exists
-use App\Customer; 
+use App\User; 
 
 class ConfigHandler
 {
     public function userField()
     {
         $user_createdAt = auth()->user()->created_at;
-        $folderName = $customer_id.$user_createdAt;
+        $user_id = auth()->user()->id;
+        
+        $folderName = $user_id.$user_createdAt;
         return $folderName;
     }
        

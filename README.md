@@ -1,5 +1,5 @@
-# laravel-ckeditor
-By default ckeditor uses local file system to store images , but what happen if we want to store images on cloud server or other server?. this is the code that unables to store images on aws or other system using FileStorage. 
+# laravel-ckeditor, # laravel-aws-ckeditor
+By default ckeditor uses local file system to store images , but what happen if we want to store images on cloud server or other server?. this is the code that unables to store images on AWS or other system using FileStorage. 
 
 Steps
 - Install Filemanager : https://github.com/UniSharp/laravel-filemanager
@@ -19,7 +19,7 @@ AWS_CKEDITOR_BUCKET=aws-ckeditor (for aws we need to create s3 bucket named aws-
 
 - app/Handlers\ConfigHandler.php : create new file
 
-- routes/lfmroutes.php : create new file
+- routes/lfmroutes.php : create new file and include this file into main routes.php
 
 - config/filesystems.php : update file
 

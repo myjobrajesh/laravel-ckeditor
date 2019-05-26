@@ -768,7 +768,8 @@ trait CkEditorHelpers
 
     /* get file dimention of the file
     * return dimension
-     * this is because staging and live site cloud doesnot support accessing file url by getiamgesize.
+     * this is because live site cloud doesnot support accessing file url by getiamgesize sometimes. so better to get file in
+     local and then use.
     */
     public function getFileDimension($file, $new_filename) {
         //create thumb image in local and then move that file to file storage and then delete local file.
